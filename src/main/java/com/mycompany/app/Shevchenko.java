@@ -1,5 +1,8 @@
 package com.mycompany.app;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Shevchenko implements Poem{
     private static String[] LINES = {
             "Садок вишневий коло хати,",
@@ -9,8 +12,8 @@ public class Shevchenko implements Poem{
     public Shevchenko(){}
 
     public void recite() {
-        for (int i=0;i<LINES.length; i++){
-            System.out.println(LINES[i]);
+        for (String line : LINES) {
+            System.out.println(line);
         }
     }
 }

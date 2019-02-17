@@ -11,7 +11,7 @@ public class App
 {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("SpringBeans.xml");
-        Circus circus = (Circus) context.getBean("shapito");
+        Circus circus = (Circus) context.getBean("circus");
         circus.performAll();
     }
 
